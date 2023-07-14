@@ -1,0 +1,42 @@
+img{
+    width:100%;
+    height:100%;
+}
+
+.row{
+    margin-bottom:10px;
+    height:290px;
+    
+    display:flex;
+    gap:5px;
+    
+}
+.row3 img{
+height:50%;
+}
+.row> div{
+    flex:1;
+}
+.row4{
+    
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media screen and (max-width:575px){
+    .row{
+        flex-direction:column;
+        height:auto;
+    }
+    .row4{
+       grid-template-columns:1fr; 
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .row{
+        flex-direction:column;
+        height:auto;
+    }
+    
+    
+}
